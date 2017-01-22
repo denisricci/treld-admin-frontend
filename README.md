@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Slingshot!
 
 [![Build status: Linux](https://img.shields.io/travis/coryhouse/react-slingshot.svg?style=flat-square)](https://travis-ci.org/coryhouse/react-slingshot)
@@ -75,3 +76,6 @@ Slingshot offers a rich development experience using the following technologies:
 The starter kit includes a working example app that puts all of the above to use.
 ## Questions?
 Check out the [FAQ](/docs/FAQ.md)
+=======
+# treld-blog-frontend
+>>>>>>> 4e1771f009424e171871abce0bffa8be2d5f2ff9
