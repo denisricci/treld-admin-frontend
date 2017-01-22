@@ -45,20 +45,20 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 ##### Mac
 Não precisa XD
 
-##### Instalar dependências
+### Instalar dependências
 Na raíz do projeto executar:
 ```sh
 $ npm install
 ```
 
-#### Build para produção
+### Build para produção
 Esse projeto já vem com alguns scripts pré configurados para liberação do projeto, basta executar  
 ```sh
 $ npm run prebuild
 $ npm run build
 ```
 
-#### Etc
+### Etc
 - O projeto já vem com o .eslintrc configurado, utilize-o sabiamente.
 - Pode utilizar qualquer editor de sua preferência, eecomendamos porém o Atom.
 - Caso opite pelo Atom, instalar os pacotes: **linter, linter-eslint, minimap, minimap-highlight-selected, color-picker, highlight-selected e js-hyperclick**
