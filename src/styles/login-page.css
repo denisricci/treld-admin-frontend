@@ -1,0 +1,21 @@
+body {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.cardTitle {
+  background-image: url(http://il9.picdn.net/shutterstock/videos/2650940/thumb/6.jpg);
+  object-fit: contain;
+}
