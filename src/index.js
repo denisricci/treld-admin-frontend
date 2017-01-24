@@ -1,5 +1,4 @@
 /* eslint-disable import/default */
-
 import React from 'react';
 import {render} from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
@@ -24,7 +23,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 
 function requireAuth(nextState, replace) {
   let { auth } = store.getState();
-  if (!auth || !auth.loggedIn) {
+  if (!auth.user) {
     replace({ pathname: '/login' });
   }
 }
@@ -32,12 +31,12 @@ function requireAuth(nextState, replace) {
 render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={App}>
+      <Route component={App} path="/">
         <IndexRoute component={HomePage} onEnter={requireAuth}>
-          <Route path="*" component={NotFoundPage} />
+          <Route component={NotFoundPage} path="*" />
         </IndexRoute>
-        <Route path="login" component={LoginPage} />
-        <Route path="*" component={NotFoundPage} />
+        <Route component={LoginPage} path="login" />
+        <Route component={NotFoundPage} path="*" />
       </Route>
     </Router>
   </Provider>, document.getElementById('app')
