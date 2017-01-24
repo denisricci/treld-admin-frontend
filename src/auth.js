@@ -1,3 +1,3 @@
 export const loggedIn = () => {
-  return !!localStorage.token;
+  return !!localStorage.profile;
 };
